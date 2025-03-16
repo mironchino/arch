@@ -279,7 +279,7 @@
 
       <section class="section-house">
         <div class="section-house_wrapper" id="form_container">
-          <form action="">
+          <form id="contact-form">
             <legend>Оставьте заявку для воплощения мечты</legend>
             <label for="name">
               Как к Вам обращаться?
@@ -288,11 +288,18 @@
                 name="name"
                 id="name"
                 placeholder="Введите Имя"
+                required
               />
             </label>
             <label for="tel">
-              Номер телефона, What'App, Telegram <input type="tel" id="tel
-              name="tel" placeholder="+79990000000" />
+              Номер телефона, What'App, Telegram
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="+79990000000"
+                required
+              />
             </label>
             <label for="email">
               Введите электронную почту
@@ -301,15 +308,17 @@
                 id="email"
                 name="email"
                 placeholder="example@email.com"
+                required
               />
             </label>
-            <label for="message"
-              >Оставьте комментарий, если необходимо
+            <label for="message">
+              Оставьте комментарий, если необходимо
               <textarea
                 class="textarea-size"
                 name="message"
                 id="message"
                 placeholder="Оставьте комментарий"
+                required
               ></textarea>
             </label>
             <button type="submit">Отправить заявку</button>

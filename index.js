@@ -58,3 +58,40 @@ nextButtons.forEach((button) => {
     switchImage("next", targetId);
   });
 });
+
+document
+  .querySelector("#contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // предотвращаем стандартное поведение формы
+
+    // Собираем данные из формы
+    let formData = new FormData(this);
+    let message = `Заявка с сайта:\n\n`;
+    formData.forEach((value, key) => {
+      message += `${key}: ${value}\n`; // формируем сообщение
+    });
+
+    // Токен и Chat ID
+    let telegramBotToken = "8046385241:AAF23y_J4giM67ACsNlp4VHbs3sosn_U6Eo"; // Замените на свой токен
+    let chatId = "250113579"; // Замените на свой Chat ID
+
+    // Формируем URL для отправки сообщения
+    let url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
+      message
+    )}`;
+
+    // Отправляем запрос с помощью fetch
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.ok) {
+          alert("Заявка успешно отправлена!");
+        } else {
+          alert("Ошибка отправки заявки.");
+        }
+      })
+      .catch((error) => {
+        console.error("Ошибка:", error);
+        alert("Ошибка при отправке формы.");
+      });
+  });
