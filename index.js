@@ -73,8 +73,8 @@ nextButtons.forEach((button) => {
       });
 
       // Токен и Chat ID
-      let telegramBotToken = "8046385241:AAF23y_J4giM67ACsNlp4VHbs3sosn_U6Eo"; // Замените на свой токен
-      let chatId = "250113579"; // Замените на свой Chat ID
+      let telegramBotToken = "7626903685:AAGHt1HxbS8oVpdGrux7LfUyL3mIUnHhWJk"; // Замените на свой токен
+      let chatId = "1193602192"; // Замените на свой Chat ID
 
       // Формируем URL для отправки сообщения
       let url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
