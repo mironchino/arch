@@ -1,0 +1,1579 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+.header-navigation {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 20px 40px;
+}
+.header-navigation_logo_wrapper {
+  width: 100px;
+  height: 70px;
+}
+.header-navigation_logo_wrapper a {
+  display: block;
+  height: 100%;
+  background-image: url(./assets/logo-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.header-navigation_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title {
+  width: 100%;
+  background-image: url(./assets/back_title.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-title_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.section-title_text_title_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  padding: 80px 0px 80px 0px;
+  max-width: 1280px;
+}
+.section-title_overlay {
+  position: absolute;
+  bottom: 0;
+}
+
+.section-title_text_title_wrapper h1 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 80px;
+  letter-spacing: -2.5%;
+  text-align: center;
+}
+.section-title_text_title_wrapper p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.section-title_overlay {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.37) 19.942%,
+    rgba(255, 255, 255, 0.78) 39.064%,
+    rgba(255, 255, 255, 0.94) 65.278%,
+    rgb(255, 255, 255) 88.544%
+  );
+}
+
+.section-how-it-work {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-how-it-work_wrapper {
+  max-width: 1280px;
+  display: flex;
+
+  padding: 120px 80px 80px 80px;
+  gap: 80px;
+}
+.section-how-it-work_title {
+  width: 520px;
+  display: block;
+  color: rgb(18, 22, 29);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.section-how-it-work_wrapper_about {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+}
+.section-how-it-work_wrapper_about p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(97, 101, 110);
+}
+.section-how-it-work_wrapper_about h3 {
+  color: rgb(18, 22, 29);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.section-how-it-work_wrapper_benefit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+}
+.benefit-wrapper {
+  width: 200px;
+}
+
+.section-house {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-house_wrapper {
+  width: 80%;
+  max-width: 1280px;
+  max-height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 80px 80px 40px 80px;
+  gap: 40px;
+}
+.section-house_title_text {
+  color: rgb(18, 22, 29);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.section-house_slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  width: 80%;
+  max-width: 1280px;
+  padding: 20px 40px;
+  cursor: grab;
+}
+
+.section-house_slider::-webkit-scrollbar {
+  width: 0;
+}
+.section-house_slider {
+  scrollbar-width: none;
+}
+.section-house_scroll-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-house_scroll-wrapper button {
+  width: 2.5em;
+  font-size: 1.5em;
+}
+
+.section-house_container_picture {
+  flex: 0 0 65%;
+  width: 600px;
+  height: 320px;
+  scroll-snap-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.section-house_container_picture:hover {
+  transform: scale(1.05);
+}
+
+/* ========== Стили для модального окна ========== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Открываем окно при клике */
+.modal:target {
+  display: flex;
+  scroll-behavior: auto;
+}
+
+/* Закрытие по клику на фон */
+.modal-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.modal button {
+  /* Используем те же глобальные стили для кнопок */
+  position: absolute;
+  background-color: rgb(
+    18,
+    22,
+    29
+  ); /* Чтобы использовать тот же цвет, что и в глобальных стилях */
+  color: #fff; /* Если необходимо задать отдельный цвет текста */
+  font-size: 24px; /* Можно изменить размер текста для модальных кнопок */
+  padding: 10px 15px; /* Можно изменить размер padding для кнопок в модальных окнах */
+  width: auto; /* Обычно для кнопок в модальных окнах лучше задать width: auto */
+  z-index: 10;
+}
+
+.modal button:hover {
+  background-color: #fff; /* Кнопки в модальном окне будут менять фон на белый при наведении */
+  color: rgb(18, 22, 29); /* И текст тоже станет темным */
+  border-color: rgb(18, 22, 29); /* Цвет бордера для модальных кнопок */
+}
+.modal-prev {
+  top: 50%;
+  left: 20px; /* Расположение кнопки слева */
+  transform: translateY(-50%);
+}
+
+/* Кнопка "следующее изображение" */
+.modal-next {
+  top: 50%;
+  right: 20px; /* Расположение кнопки справа */
+  transform: translateY(-50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.section-form_container {
+  max-width: 1280px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 24px;
+  width: 400px;
+  border: 1px solid #888; /* Граница */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+legend {
+  color: rgb(18, 22, 29);
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+input,
+textarea {
+  display: block;
+  margin-top: 5px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  padding: 5px;
+  width: 100%;
+  max-width: 70%;
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  font-family: "Montserrat", sans-serif;
+  opacity: 1;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: rgb(18, 22, 29);
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  width: 50%;
+}
+button:hover {
+  background-color: #fff;
+  color: rgb(18, 22, 29);
+  border-color: rgb(18, 22, 29);
+}
+
+footer {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+}
+
+.container-social-media {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.container-social-media .insta,
+.container-social-media .telegram,
+.container-social-media .whatsapp,
+.container-social-media .email {
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-social-media .insta {
+  background-image: url(./assets/socialMedia_link_icon/instagram-svgrepo-com.svg);
+}
+.container-social-media .telegram {
+  background-image: url(./assets/socialMedia_link_icon/telegram.svg);
+}
+.container-social-media .email {
+  background-image: url(./assets/socialMedia_link_icon/email.svg);
+}
+.container-social-media .whatsapp {
+  background-image: url(./assets/socialMedia_link_icon/whatsapp.svg);
+}
+.container-docs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.container-docs a:hover {
+  color: #969494;
+}
+
+@media (min-width: 981px) and (max-width: 1200px) {
+  .header-navigation {
+    width: 100%;
+  }
+  .header-navigation_logo_wrapper {
+    max-width: 100px;
+    min-height: 60px;
+  }
+
+  .header-navigation_list {
+    gap: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+
+  .section-title_text_title_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    padding: 80px 0px 80px 0px;
+    max-width: 100%;
+  }
+
+  .section-title_text_title_wrapper h1 {
+    font-size: 64px;
+  }
+  .section-title_text_title_wrapper p {
+    font-size: 22px;
+  }
+  .section-how-it-work {
+    max-width: 980px;
+  }
+
+  .section-how-it-work_wrapper {
+    width: 100%;
+
+    padding: 60px 40px 40px 40px;
+    gap: 40px;
+  }
+  .section-how-it-work_title {
+    width: 300px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .section-how-it-work_wrapper_about {
+    width: 600px;
+  }
+  .section-how-it-work_wrapper_about p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .section-how-it-work_wrapper_about h3 {
+    color: rgb(18, 22, 29);
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 60px;
+    padding: 10px 0 0 0;
+  }
+  .benefit-wrapper {
+    width: 33.3%;
+  }
+
+  .section-house_wrapper {
+    width: 80%;
+    max-width: 1280px;
+    max-height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 80px 40px 80px;
+    gap: 40px;
+  }
+  .section-house_title_text {
+    color: rgb(18, 22, 29);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .section-house_slider {
+    width: 80%;
+    max-width: 980px;
+    cursor: grab;
+    padding: 0;
+  }
+
+  .section-house_scroll-wrapper {
+    max-width: 980px;
+    padding: 0 40px 40px 40px;
+  }
+  .section-house_scroll-wrapper button {
+    width: 2.5em;
+    font-size: 1.5em;
+  }
+
+  .section-house_container_picture {
+    flex: 0 0 65%;
+    width: 650px;
+    min-height: 320px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 980px) {
+  .header-navigation {
+    width: 100%;
+  }
+  .header-navigation_logo_wrapper {
+    max-width: 80px;
+    min-height: 50px;
+  }
+
+  .header-navigation_list {
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+
+  .section-title_text_title_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    padding: 80px 0px 80px 0px;
+    max-width: 100%;
+  }
+
+  .section-title_text_title_wrapper h1 {
+    font-size: 48px;
+  }
+  .section-title_text_title_wrapper p {
+    font-size: 18px;
+  }
+  .section-how-it-work {
+    max-width: 769px;
+  }
+
+  .section-how-it-work_wrapper {
+    width: 100%;
+
+    padding: 40px 40px 40px 40px;
+    gap: 30px;
+  }
+  .section-how-it-work_title {
+    width: 269px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .section-how-it-work_wrapper_about {
+    width: 500px;
+  }
+  .section-how-it-work_wrapper_about p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .section-how-it-work_wrapper_about h3 {
+    color: rgb(18, 22, 29);
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 20px;
+    padding: 10px 0 0 0;
+  }
+  .benefit-wrapper {
+    width: 33.3%;
+  }
+
+  .section-house_wrapper {
+    width: 80%;
+    max-width: 769px;
+    max-height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 80px 40px 80px;
+    gap: 30px;
+  }
+  .section-house_title_text {
+    color: rgb(18, 22, 29);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .section-house_slider {
+    width: 80%;
+    max-width: 769px;
+    cursor: grab;
+    padding: 0;
+  }
+
+  .section-house_scroll-wrapper {
+    max-width: 769px;
+    padding: 0 40px 40px 40px;
+  }
+  .section-house_scroll-wrapper button {
+    width: 2.5em;
+    font-size: 1.5em;
+  }
+
+  .section-house_container_picture {
+    flex: 0 0 65%;
+    width: 650px;
+    min-height: 320px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .header-navigation {
+    width: 100%;
+  }
+  .header-navigation_logo_wrapper {
+    max-width: 60px;
+    min-height: 40px;
+  }
+
+  .header-navigation_list {
+    gap: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+
+  .section-title_text_title_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    padding: 80px 0px 80px 0px;
+    max-width: 100%;
+  }
+
+  .section-title_text_title_wrapper h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .section-title_text_title_wrapper p {
+    font-size: 12px;
+  }
+  .section-how-it-work {
+    max-width: 577px;
+  }
+
+  .section-how-it-work_wrapper {
+    width: 100%;
+
+    padding: 40px 20px 40px 20px;
+    gap: 15px;
+  }
+  .section-how-it-work_title {
+    width: 180px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .section-how-it-work_wrapper_about {
+    width: 390px;
+  }
+  .section-how-it-work_wrapper_about p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .section-how-it-work_wrapper_about h3 {
+    color: rgb(18, 22, 29);
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 15px;
+    padding: 10px 0 0 0;
+  }
+  .benefit-wrapper {
+    width: 33.3%;
+  }
+
+  .section-house_wrapper {
+    width: 80%;
+    max-width: 577px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 80px 40px 80px;
+    gap: 30px;
+  }
+  .section-house_title_text {
+    color: rgb(18, 22, 29);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .section-house_slider {
+    width: 80%;
+    max-width: 577px;
+    cursor: grab;
+    padding: 0;
+  }
+
+  .section-house_scroll-wrapper {
+    max-width: 577px;
+    gap: 20px;
+    padding: 0 40px 40px 40px;
+  }
+  .section-house_scroll-wrapper button {
+    width: 2.5em;
+    font-size: 1.5em;
+  }
+
+  .section-house_container_picture {
+    flex: 0 0 65%;
+    width: 650px;
+    min-height: 320px;
+  }
+  .section-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  form {
+    gap: 18px;
+    width: 100%;
+  }
+
+  legend {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+@media (min-width: 321px) and (max-width: 576px) {
+  .header-navigation {
+    width: 100%;
+  }
+  .header-navigation_logo_wrapper {
+    max-width: 40px;
+    min-height: 40px;
+  }
+
+  .header-navigation_list {
+    display: none;
+  }
+
+  .section-title_text_title_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    padding: 80px 0px 80px 0px;
+    max-width: 100%;
+  }
+
+  .section-title_text_title_wrapper h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .section-title_text_title_wrapper p {
+    font-size: 10px;
+  }
+  .section-how-it-work {
+    max-width: 321px;
+  }
+
+  .section-how-it-work_wrapper {
+    width: 100%;
+
+    padding: 40px 20px 40px 20px;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section-how-it-work_title {
+    width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .section-how-it-work_wrapper_about {
+    width: 100%;
+  }
+  .section-how-it-work_wrapper_about p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .section-how-it-work_wrapper_about h3 {
+    color: rgb(18, 22, 29);
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 15px;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benefit-wrapper {
+    width: 45%;
+  }
+
+  .section-house_wrapper {
+    width: 80%;
+    max-width: 321px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 80px 40px 80px;
+    gap: 20px;
+  }
+  .section-house_title_text {
+    color: rgb(18, 22, 29);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    display: block;
+    width: 300px;
+    padding: 0 20px 0 20px;
+  }
+
+  .section-house_slider {
+    width: 80%;
+    max-width: 321px;
+    cursor: grab;
+    padding: 0;
+  }
+
+  .section-house_scroll-wrapper {
+    max-width: 321px;
+    gap: 20px;
+    padding: 0 20px 10px 10px;
+  }
+  .section-house_scroll-wrapper button {
+    display: none;
+  }
+
+  .section-house_container_picture {
+    flex: 0 0 87%;
+    width: 650px;
+    min-height: 320px;
+  }
+
+  #form_container {
+    padding: 15px;
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  legend {
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    display: block;
+    margin-top: 5px;
+    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    padding: 5px;
+    width: 100%;
+    max-width: 70%;
+  }
+  label {
+    font-size: 12px;
+  }
+
+  textarea::placeholder,
+  input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+    font-family: "Montserrat", sans-serif;
+    opacity: 1;
+  }
+
+  button {
+    padding: 5px 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgb(18, 22, 29);
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    width: 50%;
+  }
+
+  footer {
+    padding: 10px;
+  }
+  footer h3 {
+    font-size: 16px;
+  }
+  .container-social-media {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    justify-content: space-between;
+  }
+
+  .container-social-media .insta,
+  .container-social-media .telegram,
+  .container-social-media .whatsapp,
+  .container-social-media .email {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container-docs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 70%;
+    font-size: 12px;
+    gap: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .header-navigation {
+    width: 100%;
+  }
+  .header-navigation_logo_wrapper {
+    max-width: 40px;
+    min-height: 40px;
+  }
+
+  .header-navigation_list {
+    display: none;
+  }
+
+  .section-title_text_title_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    padding: 80px 0px 80px 0px;
+    max-width: 100%;
+  }
+
+  .section-title_text_title_wrapper h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .section-title_text_title_wrapper p {
+    font-size: 10px;
+  }
+  .section-how-it-work {
+    max-width: 300px;
+  }
+
+  .section-how-it-work_wrapper {
+    width: 100%;
+
+    padding: 40px 20px 40px 20px;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section-how-it-work_title {
+    width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .section-how-it-work_wrapper_about {
+    width: 100%;
+  }
+  .section-how-it-work_wrapper_about p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .section-how-it-work_wrapper_about h3 {
+    color: rgb(18, 22, 29);
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 15px;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benefit-wrapper {
+    width: 45%;
+  }
+
+  .section-house_wrapper {
+    width: 80%;
+    max-width: 321px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 80px 40px 80px;
+    gap: 20px;
+  }
+  .section-house_title_text {
+    color: rgb(18, 22, 29);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    display: block;
+    width: 300px;
+    padding: 0 20px 0 20px;
+  }
+
+  .section-house_slider {
+    width: 80%;
+    max-width: 321px;
+    cursor: grab;
+    padding: 0;
+  }
+
+  .section-house_scroll-wrapper {
+    max-width: 321px;
+    gap: 20px;
+    padding: 0 20px 10px 10px;
+  }
+  .section-house_scroll-wrapper button {
+    display: none;
+  }
+
+  .section-house_container_picture {
+    flex: 0 0 87%;
+    width: 650px;
+    min-height: 320px;
+  }
+
+  #form_container {
+    padding: 15px;
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  legend {
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    display: block;
+    margin-top: 5px;
+    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    padding: 5px;
+    width: 100%;
+    max-width: 70%;
+  }
+  label {
+    font-size: 12px;
+  }
+
+  textarea::placeholder,
+  input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+    font-family: "Montserrat", sans-serif;
+    opacity: 1;
+  }
+
+  button {
+    padding: 5px 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgb(18, 22, 29);
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    width: 50%;
+  }
+
+  footer {
+    padding: 10px;
+  }
+  footer h3 {
+    font-size: 16px;
+  }
+  .container-social-media {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    justify-content: space-between;
+  }
+
+  .container-social-media .insta,
+  .container-social-media .telegram,
+  .container-social-media .whatsapp,
+  .container-social-media .email {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container-docs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 70%;
+    font-size: 12px;
+    gap: 12px;
+  }
+}
+/* .section-how-it-work_wrapper {
+    max-width: 1100px;
+    display: flex;
+    padding: 100px 60px 60px 60px;
+    gap: 50px;
+  }
+  .section-how-it-work_title {
+    width: 420px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .section-how-it-work_wrapper_about {
+    width: 580px;
+    gap: 15px;
+  }
+
+  .section-how-it-work_wrapper_about h3 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 40px;
+  }
+  .benefit-wrapper {
+    width: 160px;
+  }
+
+  .section-house_wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    max-height: 850px;
+    padding: 60px 60px 30px 60px;
+    gap: 20px;
+  }
+  .section-house_title_text {
+    font-size: 30px;
+  }
+
+  .section-house_slider {
+    gap: 30px;
+    width: 80%;
+    max-width: 1060px;
+    padding: 0;
+  }
+  .section-house_container_picture {
+    flex: 0 0 57%;
+    width: 480px;
+    height: 300px;
+  }
+  #next-button,
+  #next-button-1 {
+    margin: 0 0 0 10px;
+  }
+  #prev-button,
+  #prev-button-1 {
+    margin: 0 10px 0 0;
+  }
+
+  legend {
+    font-size: 20px;
+  }
+}
+@media (max-width: 980px) {
+  .section-title_text_title_wrapper {
+    gap: 20px;
+    max-width: 980px;
+  }
+
+  .section-title_text_title_wrapper h1 {
+    font-size: 54px;
+    line-height: 50px;
+  }
+  .section-title_text_title_wrapper p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .section-how-it-work_wrapper {
+    max-width: 980px;
+    display: flex;
+    padding: 60px 50px 40px 50px;
+    gap: 20px;
+  }
+  .section-how-it-work_title {
+    width: 320px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .section-how-it-work_wrapper_about {
+    width: 520px;
+    gap: 15px;
+  }
+
+  .section-how-it-work_wrapper_about h3 {
+    font-size: 30px;
+  }
+  .section-how-it-work_wrapper_about p {
+    font-size: 15px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 50px;
+  }
+  .benefit-wrapper {
+    width: 130px;
+  }
+
+  .section-house_wrapper {
+    max-width: 980px;
+    max-height: 850px;
+    padding: 50px 50px 25px 50px;
+    gap: 15px;
+  }
+  .section-house_title_text {
+    font-size: 22px;
+  }
+
+  .section-house_slider {
+    gap: 15px;
+    width: 80%;
+    max-width: 880px;
+    padding: 0;
+  }
+  .section-house_container_picture {
+    flex: 0 0 53%;
+    width: 380px;
+    height: 300px;
+  }
+  .section-house_scroll-wrapper {
+    max-width: 980px;
+  }
+
+  #next-button,
+  #next-button-1 {
+    margin: 0 0 0 10px;
+  }
+  #prev-button,
+  #prev-button-1 {
+    margin: 0 10px 0 0;
+  }
+
+  form {
+    gap: 12px;
+  }
+
+  legend {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .section-title_text_title_wrapper {
+    gap: 15px;
+    max-width: 767px;
+  }
+
+  .section-title_text_title_wrapper h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .section-title_text_title_wrapper p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .section-how-it-work_wrapper {
+    max-width: 767px;
+    display: flex;
+    padding: 60px 50px 40px 50px;
+    gap: 20px;
+  }
+  .section-how-it-work_title {
+    width: 260px;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .section-how-it-work_wrapper_about {
+    width: 467px;
+    gap: 15px;
+  }
+
+  .section-how-it-work_wrapper_about h3 {
+    font-size: 26px;
+  }
+  .section-how-it-work_wrapper_about p {
+    font-size: 14px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 35px;
+  }
+  .benefit-wrapper {
+    width: 155px;
+  }
+
+  .section-house_wrapper {
+    max-width: 767px;
+    max-height: 850px;
+    padding: 50px 50px 25px 50px;
+    gap: 15px;
+  }
+  .section-house_title_text {
+    font-size: 16px;
+  }
+
+  .section-house_slider {
+    gap: 10px;
+    width: 80%;
+    max-width: 600px;
+    padding: 0;
+  }
+  .section-house_container_picture {
+    flex: 0 0 53%;
+    width: 360px;
+    height: 280px;
+  }
+  .section-house_scroll-wrapper {
+    max-width: 767px;
+  }
+
+  #next-button,
+  #next-button-1 {
+    margin: 0 0 0 10px;
+  }
+  #prev-button,
+  #prev-button-1 {
+    margin: 0 10px 0 0;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  legend {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .section-title_text_title_wrapper {
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .section-title_text_title_wrapper h1 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .section-title_text_title_wrapper p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+
+  .section-how-it-work_wrapper {
+    max-width: 480px;
+    gap: 10px;
+    flex-direction: column;
+    padding: 0;
+    width: 85%;
+    align-items: center;
+  }
+  .section-how-it-work_title {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 40px;
+  }
+
+  .section-how-it-work_wrapper_about {
+    width: 300px;
+    gap: 15px;
+    overflow-wrap: break-word;
+  }
+
+  .section-how-it-work_wrapper_about h3 {
+    font-size: 22px;
+  }
+  .section-how-it-work_wrapper_about p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+  .section-how-it-work_wrapper_benefit {
+    gap: 5px;
+  }
+  .benefit-wrapper {
+    width: 100px;
+  }
+
+  .section-house_wrapper {
+    max-width: 480px;
+    max-height: 650px;
+    padding: 25px 50px 25px 50px;
+    gap: 10px;
+  }
+  .section-house_title_text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .section-house_slider {
+    gap: 10px;
+    width: 80%;
+    max-width: 400px;
+    padding: 0;
+  }
+  .section-house_container_picture {
+    flex: 0 0 85%;
+    width: 270px;
+    height: 280px;
+  }
+  .section-house_scroll-wrapper {
+    max-width: 480px;
+  }
+
+  #next-button,
+  #next-button-1,
+  #prev-button,
+  #prev-button-1 {
+    display: none;
+  }
+
+  form {
+    gap: 10px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  legend {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+  .header-navigation_logo_wrapper a {
+    height: 80%;
+  }
+}
+
+/* @media (min-width: 1200px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  
+}
+
+@media (max-width: 767px) {
+  
+}
+
+/* @media (max-width: 480px) {
+  
+} */

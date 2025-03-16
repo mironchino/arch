@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Real Design by Em.A.Vi.</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-navigation">
+        <div class="header-navigation_logo_wrapper"><a href="#"></a></div>
+        <ul class="header-navigation_list">
+          <li><a href="#">О сервисе</a></li>
+          <li><a href="#house">Проекты</a></li>
+          <li><a href="#social-media">Связаться с нами</a></li>
+          <li><a href="#">F.A.Q.</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section-title">
+        <div class="section-title_wrapper">
+          <div class="section-title_text_title_wrapper">
+            <h1>
+              Более функциональный. <br />
+              Более стильный.
+            </h1>
+            <p>Сделай свою жизнь запоминающейся.</p>
+          </div>
+          <div class="section-title_overlay"></div>
+        </div>
+      </section>
+      <section class="section-how-it-work">
+        <div class="section-how-it-work_wrapper">
+          <h1 class="section-how-it-work_title">
+            Наслаждайтесь качественной жизнью в домах от Александры Эм.
+          </h1>
+          <div class="section-how-it-work_wrapper_about">
+            <p>
+              Жилье, разработанное нашим head-Архитектором Эм Александрой - это
+              правильный выбор для тех из вас, кто ищет комфортное, безопасное и
+              доступное по цене жилье. Благодаря опыту мировой насмотренности,
+              вы сможете наслаждаться уединением и комфортом, живя в
+              функциональном и стильном доме. Из такого дома не захочется
+              уезжать.
+            </p>
+            <div class="section-how-it-work_wrapper_benefit">
+              <div class="benefit-wrapper">
+                <h3>+500</h3>
+                <p>Частных доверителей квартир и домов</p>
+              </div>
+              <div class="benefit-wrapper">
+                <h3>+10</h3>
+                <p>Стран посещено для насмотренности</p>
+              </div>
+              <div class="benefit-wrapper">
+                <h3>+3</h3>
+                <p>Создано зданий государственной значимости</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-house" id="house">
+        <div class="section-house_wrapper">
+          <h2 class="section-house_title_text">
+            Удобные и красивые дома, выполненные в стиле Modern.
+          </h2>
+          <div class="section-house_scroll-wrapper">
+            <button id="prev-button">←</button>
+            <div class="section-house_slider" tabindex="0" id="scroll-wrapper">
+              <a
+                href="#img1"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/house1.webp')"
+              ></a>
+              <a
+                href="#img2"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/house2.webp')"
+              ></a>
+              <a
+                href="#img3"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/house3.webp')"
+              ></a>
+              <a
+                href="#img4"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/house4.webp')"
+              ></a>
+            </div>
+            <button id="next-button">→</button>
+          </div>
+        </div>
+      </section>
+      <div id="img1" class="modal">
+        <button class="modal-prev" data-target="img4">←</button>
+        <a href="#house" class="modal-bg"></a>
+        <img src="./assets/house1.webp" class="modal-content" />
+        <button class="modal-next" data-target="img2">→</button>
+      </div>
+
+      <div id="img2" class="modal">
+        <button class="modal-prev" data-target="img1">←</button>
+        <a href="#house" class="modal-bg"></a>
+        <img src="./assets/house2.webp" class="modal-content" />
+        <button class="modal-next" data-target="img3">→</button>
+      </div>
+
+      <div id="img3" class="modal">
+        <button class="modal-prev" data-target="img2">←</button>
+        <a href="#house" class="modal-bg"></a>
+        <img src="./assets/house3.webp" class="modal-content" />
+        <button class="modal-next" data-target="img4">→</button>
+      </div>
+
+      <div id="img4" class="modal">
+        <button class="modal-prev" data-target="img3">←</button>
+        <a href="#house" class="modal-bg"></a>
+        <img src="./assets/house4.webp" class="modal-content" />
+        <button class="modal-next" data-target="img1">→</button>
+      </div>
+
+      <section class="section-house" id="interior">
+        <div class="section-house_wrapper">
+          <h2 class="section-house_title_text">
+            Функциональность и эстетичность во всем.
+          </h2>
+          <div class="section-house_scroll-wrapper">
+            <button id="prev-button-1">←</button>
+            <div
+              class="section-house_slider"
+              tabindex="0"
+              id="scroll-wrapper-1"
+            >
+              <a
+                href="#img5"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/buthroom1.webp')"
+              ></a>
+              <a
+                href="#img6"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/buthroom3.webp')"
+              ></a>
+              <a
+                href="#img7"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/bedroom3.webp')"
+              ></a>
+              <a
+                href="#img8"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/bedroom4.webp')"
+              ></a>
+              <a
+                href="#img9"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/bedroom5.webp')"
+              ></a>
+              <a
+                href="#img10"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/kitchen1.webp')"
+              ></a>
+              <a
+                href="#img11"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/kitchen\ 3.webp')"
+              ></a>
+              <a
+                href="#img12"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/zal1.webp')"
+              ></a>
+              <a
+                href="#img13"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/zal2.webp')"
+              ></a>
+              <a
+                href="#img14"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/zal3.webp')"
+              ></a>
+              <a
+                href="#img15"
+                class="section-house_container_picture"
+                style="background-image: url('./assets/zal4.webp')"
+              ></a>
+            </div>
+            <button id="next-button-1">→</button>
+          </div>
+        </div>
+      </section>
+      <div id="img5" class="modal">
+        <button class="modal-prev" data-target="img15">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/buthroom1.webp" class="modal-content" />
+        <button class="modal-next" data-target="img6">→</button>
+      </div>
+      <div id="img6" class="modal">
+        <button class="modal-prev" data-target="img5">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/buthroom3.webp" class="modal-content" />
+        <button class="modal-next" data-target="img7">→</button>
+      </div>
+
+      <div id="img7" class="modal">
+        <button class="modal-prev" data-target="img6">←</button>
+        <a href="#house" class="modal-bg"></a>
+        <img src="./assets/bedroom3.webp" class="modal-content" />
+        <button class="modal-next" data-target="img8">→</button>
+      </div>
+
+      <div id="img8" class="modal">
+        <button class="modal-prev" data-target="img7">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/bedroom4.webp" class="modal-content" />
+        <button class="modal-next" data-target="img9">→</button>
+      </div>
+
+      <div id="img9" class="modal">
+        <button class="modal-prev" data-target="img8">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/bedroom5.webp" class="modal-content" />
+        <button class="modal-next" data-target="img10">→</button>
+      </div>
+
+      <div id="img10" class="modal">
+        <button class="modal-prev" data-target="img9">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/kitchen1.webp" class="modal-content" />
+        <button class="modal-next" data-target="img11">→</button>
+      </div>
+
+      <div id="img11" class="modal">
+        <button class="modal-prev" data-target="img10">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/kitchen 3.webp" class="modal-content" />
+        <button class="modal-next" data-target="img12">→</button>
+      </div>
+
+      <div id="img12" class="modal">
+        <button class="modal-prev" data-target="img11">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/zal1.webp" class="modal-content" />
+        <button class="modal-next" data-target="img13">→</button>
+      </div>
+
+      <div id="img13" class="modal">
+        <button class="modal-prev" data-target="img12">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/zal2.webp" class="modal-content" />
+        <button class="modal-next" data-target="img14">→</button>
+      </div>
+
+      <div id="img14" class="modal">
+        <button class="modal-prev" data-target="img13">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/zal3.webp" class="modal-content" />
+        <button class="modal-next" data-target="img15">→</button>
+      </div>
+
+      <div id="img15" class="modal">
+        <button class="modal-prev" data-target="img14">←</button>
+        <a href="#interior" class="modal-bg"></a>
+        <img src="./assets/zal4.webp" class="modal-content" />
+        <button class="modal-next" data-target="img6">→</button>
+      </div>
+
+      <section class="section-house">
+        <div class="section-house_wrapper" id="form_container">
+          <form action="">
+            <legend>Оставьте заявку для воплощения мечты</legend>
+            <label for="name">
+              Как к Вам обращаться?
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Введите Имя"
+              />
+            </label>
+            <label for="tel">
+              Номер телефона, What'App, Telegram <input type="tel" id="tel
+              name="tel" placeholder="+79990000000" />
+            </label>
+            <label for="email">
+              Введите электронную почту
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+              />
+            </label>
+            <label for="message"
+              >Оставьте комментарий, если необходимо
+              <textarea
+                class="textarea-size"
+                name="message"
+                id="message"
+                placeholder="Оставьте комментарий"
+              ></textarea>
+            </label>
+            <button type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>Свяжитесь в социальных сетях</h3>
+      <div class="container-social-media" id="social-media">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/alexandra_em14/"
+          class="insta"
+        ></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://t.me/emavi14/"
+          class="telegram"
+        ></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://wa.me/+77758836808/"
+          class="whatsapp"
+        ></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:mirgoodlife@gmail.com?subject=Хочу%20архитектурный%20проект"
+          class="email"
+        ></a>
+      </div>
+      <div class="container-docs">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Согласие на обработку персональных данных</a>
+        <a href="#">Связаться с Мироном Тен - автором сайта</a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
